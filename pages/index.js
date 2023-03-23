@@ -1,10 +1,17 @@
 import Head from "next/head";
 // import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Inter, Patrick_Hand } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import Header from "@/component/header";
+import FirstPage from "@/component/firstPage";
 
 const inter = Inter({ subsets: ["latin"] });
+const partickHand = Patrick_Hand({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Home() {
   return (
@@ -15,9 +22,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Link href="/about">Click me for Client Routing</Link>
-        <a href="/about">Clicl me for Server Side</a>
+      <Header className={partickHand.className} />
+      <main className={`${styles.main} ${partickHand.className}`}>
+        <FirstPage />
       </main>
     </>
   );

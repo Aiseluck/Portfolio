@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --top: 67px;
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --top: 58px;
+  }
+}
