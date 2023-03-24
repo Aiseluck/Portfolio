@@ -1,4 +1,9 @@
+import Typing from "@/resuable/typingtext";
 import firstStyles from "@/styles/component/firstpage.module.css";
+import resumeImg from "@/public/socials/resume.svg";
+import articleImg from "@/public/socials/articles.svg";
+import Image from "next/image";
+import Contact from "./contact";
 
 export default function FirstPage() {
   return (
@@ -9,11 +14,27 @@ export default function FirstPage() {
             Hey there👋,I'm Aisosa Goodluck
           </div>
           <div className={firstStyles.job}>
-            Blockchain Developer who loves Technical Writing
+            <Typing
+              words={[
+                "A Blockchain Developer",
+                "A FrontEnd Developer",
+                "A Backend Developer",
+                "A Technical Writer",
+              ]}
+            />
           </div>
           <div className={firstStyles.myworks}>
-            Hi, I am Aisosa Goodluck, Currently a FullStack Blockchain Developer
-            at Avraq Africa
+            Currently a FullStack Blockchain Developer at Avraq Africa
+          </div>
+          <div className={firstStyles.resumes}>
+            <div className={firstStyles.resume}>
+              <p>Check out my Resume</p>
+              <Image src={resumeImg} />
+            </div>
+            <div className={firstStyles.article}>
+              <p>Check out my Articles</p>
+              <Image src={articleImg} />
+            </div>
           </div>
         </div>
         <div className={firstStyles.picture}>
@@ -21,6 +42,9 @@ export default function FirstPage() {
             <img src="./myResized.png" />
           </div>
         </div>
+      </div>
+      <div className={firstStyles.contact}>
+        <Contact />
       </div>
     </section>
   );

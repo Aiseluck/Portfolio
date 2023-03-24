@@ -6,6 +6,7 @@
 
 :root {
   --top: 67px;
+  --mtop: 58px;
 }
 @media screen and (max-width: 767px) {
   :root {

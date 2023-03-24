@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.first {
+  margin-right: 4px;
+}
+
+.second {
+  position: relative;
+}
+#startAnimate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  animation: animate 4s steps(12) infinite;
+}
+
+#startAnimate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-left: 3px solid black;
+  animation: animate 4s steps(12) infinite, blink 0.6s steps(2, start) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: calc(0%-4px);
+  }
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
