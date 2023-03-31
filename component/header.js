@@ -21,7 +21,7 @@ function Header({ className }) {
         <div className={headerStyles.contact}>
           <ul>
             <li>
-              <a href="#">Services</a>
+              <a href="#">My Resume</a>
             </li>
             <li>
               <a href="#">Works</a>
