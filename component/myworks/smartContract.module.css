@@ -1,0 +1,68 @@
+#hidden {
+  display: none;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.heading {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  border-bottom: 3px solid black;
+}
+
+.cards {
+  display: flex;
+  height: 90%;
+  padding: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 50%;
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  justify-content: space-between;
+  font-size: 17px;
+  margin: 10px;
+  transition: all 0.8s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.chain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}

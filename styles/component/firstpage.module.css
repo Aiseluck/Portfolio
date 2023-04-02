@@ -13,6 +13,18 @@
   height: 90%;
   display: flex;
   padding: 0 2%;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -96,6 +108,7 @@
   font-size: 20px;
   font-weight: bolder;
   transition: all 0.8s;
+  cursor: pointer;
 }
 
 .port_work:hover {
@@ -175,4 +188,21 @@
     padding: 0 7%;
     font-size: 14px;
   }
+}
+
+#hidden {
+  display: none;
+}
+
+/* showing my porfolio................. */
+
+.showWorks {
+  height: 90%;
+  display: flex;
+  margin: 0 2%;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
 }
