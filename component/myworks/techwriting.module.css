@@ -21,3 +21,49 @@
   font-weight: bolder;
   cursor: pointer;
 }
+
+.heading {
+  display: inline-block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  border-bottom: 3px solid black;
+}
+
+.cards {
+  display: flex;
+  height: 90%;
+  padding: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 3px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  margin: 10px;
+  transition: all 0.8s;
+  width: 30%;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card h1 {
+  font-size: 17px;
+}
+
+.link {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
