@@ -12,6 +12,8 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: 10px;
+    flex-wrap: wrap-reverse;
+    align-content: space-between;
   }
 }
 
