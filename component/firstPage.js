@@ -49,7 +49,7 @@ export default function FirstPage() {
           <div className={firstStyles.myworks}>
             Currently a FullStack Blockchain Developer at Avraq Africa
           </div>
-          <div className={firstStyles.portfolio}>
+          <div className={firstStyles.portfolio} id={firstStyles.port}>
             <div>Check out my Works</div>
             <div className={firstStyles.group}>
               {portfolio.map(({ title, image, view }) => {
@@ -70,6 +70,23 @@ export default function FirstPage() {
         <div className={firstStyles.picture}>
           <div className={firstStyles.Img}>
             <img src="./myResized.png" />
+          </div>
+        </div>
+        <div className={firstStyles.portfolio} id={firstStyles.mport}>
+          <div>Check out my Works</div>
+          <div className={firstStyles.group}>
+            {portfolio.map(({ title, image, view }) => {
+              return (
+                <div
+                  className={firstStyles.port_work}
+                  key={title}
+                  onClick={() => changeView(view)}
+                >
+                  <span>{title}</span>
+                  <Image src={image} alt={"Reference Logo"} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
