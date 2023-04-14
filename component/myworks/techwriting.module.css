@@ -30,12 +30,30 @@
   border-bottom: 3px solid black;
 }
 
+@media screen and (max-width: 767px) {
+  .close {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+}
+
 .cards {
   display: flex;
   height: 90%;
   padding: 15px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
 }
 
 .card {
@@ -51,6 +69,12 @@
   margin: 10px;
   transition: all 0.8s;
   width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: auto;
+  }
 }
 
 .card:hover {

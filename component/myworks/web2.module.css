@@ -30,6 +30,15 @@
   border-bottom: 3px solid black;
 }
 
+@media screen and (max-width: 767px) {
+  .close {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+}
+
 .cards {
   display: flex;
   height: 90%;
@@ -37,8 +46,15 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 767px) {
+  .cards {
+    padding: 0;
+    justify-content: space-between;
+  }
+}
+
 .card {
-  height: 50%;
+  height: 45%;
   border: 3px solid black;
   border-radius: 15px;
   padding: 10px;
@@ -50,16 +66,42 @@
   transition: all 0.8s;
 }
 
+@media screen and (max-width: 767px) {
+  .card {
+    border: none;
+    border-top: 3px solid black;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0;
+    padding-top: 5px;
+  }
+}
+
 .image {
-  flex-basis: 30%;
+  flex-basis: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .image {
+    height: 40%;
+  }
+}
+
 .image img {
   width: auto;
   height: 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .image img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .content {
@@ -69,6 +111,18 @@
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    height: 60%;
+  }
+  .content h1 {
+    font-size: 1rem;
+  }
+  .content p {
+    font-size: 14px;
+  }
 }
 
 .anchor {
@@ -96,4 +150,13 @@
 }
 .build ul li {
   margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .build {
+    margin: 6px 0px;
+  }
+  .build ul li {
+    margin: 0px 6px;
+  }
 }
