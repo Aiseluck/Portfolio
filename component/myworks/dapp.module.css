@@ -49,6 +49,7 @@
 @media screen and (max-width: 767px) {
   .cards {
     padding: 0;
+    justify-content: space-between;
   }
 }
 
@@ -71,7 +72,11 @@
     border-top: 3px solid black;
     flex-direction: column-reverse;
     justify-content: flex-start;
-    margin: 10px 0px;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0;
+    padding-top: 5px;
+    height: auto;
   }
 }
 
@@ -87,12 +92,12 @@
   height: 90%;
 }
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .image img {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
-} */
+}
 
 .content {
   flex-basis: 60%;
@@ -104,6 +109,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .content {
+    flex-basis: 70%;
+  }
   .content h1 {
     font-size: 1rem;
   }
@@ -137,4 +145,13 @@
 }
 .build ul li {
   margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .build {
+    margin: 6px 0px;
+  }
+  .build ul li {
+    margin: 0px 6px;
+  }
 }
