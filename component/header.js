@@ -33,9 +33,13 @@ function Header({ className }) {
         </div>
       </nav>
       <div className={headerStyles.socials}>
-        <Image src={githubImg} alt={"gitHub Logo"} />
+        <a href="https://github.com/Aiseluck" target="_blank" rel="noreferrer">
+          <Image src={githubImg} alt={"gitHub Logo"} />
+        </a>
         <Image src={linkedinImg} alt={"LinkedIn Logo"} />
-        <Image src={twitterImg} alt={"Twiiter Logo"} />
+        <a href="https://twitter.com/aiseluck" target="_blank" rel="noreferrer">
+          <Image src={twitterImg} alt={"Twiiter Logo"} />
+        </a>
       </div>
     </header>
   );
