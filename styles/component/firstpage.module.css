@@ -121,6 +121,10 @@
   display: flex;
 }
 
+#mport .group {
+  justify-content: space-between;
+}
+
 .port_work {
   margin-left: 1.5rem;
   display: flex;
@@ -129,6 +133,10 @@
   font-weight: bolder;
   transition: all 0.8s;
   cursor: pointer;
+}
+
+#mport .port_work {
+  margin-left: 0;
 }
 
 .port_work:hover {

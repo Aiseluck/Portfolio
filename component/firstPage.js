@@ -1,7 +1,5 @@
 import Typing from "@/resuable/typingtext";
 import firstStyles from "@/styles/component/firstpage.module.css";
-import resumeImg from "@/public/socials/resume.svg";
-import articleImg from "@/public/socials/articles.svg";
 import dapp from "@/public/skills/layer.svg";
 import contract from "@/public/skills/cube.svg";
 import web2 from "@/public/skills/monitor.svg";

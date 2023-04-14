@@ -26,16 +26,34 @@
   border-bottom: 3px solid black;
 }
 
+@media screen and (max-width: 767px) {
+  .close {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+}
+
 .cards {
   display: flex;
   height: 90%;
   padding: 15px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
 }
 
 .card {
-  height: 50%;
+  height: 40%;
   border: 3px solid black;
   border-radius: 15px;
   padding: 10px;
@@ -48,12 +66,20 @@
   transition: all 0.8s;
 }
 
+@media screen and (max-width: 767px) {
+  .card {
+    font-size: 1rem;
+  }
+}
+
 .card:hover {
   transform: scale(1.1);
 }
 
-.card p {
-  font-size: 15px;
+.card span {
+  word-wrap: break-word;
+
+  font-weight: bolder;
 }
 
 .chain {
@@ -65,4 +91,19 @@
 .logo {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .card span {
+    font-size: 12px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .chain a {
+    color: black;
+    font-size: 12px;
+  }
 }
