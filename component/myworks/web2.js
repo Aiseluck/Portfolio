@@ -55,7 +55,7 @@ export default function Web2({ view, setView }) {
             <p>Opening Page of Xteemwell and it associated website</p>
             <div className={web.anchor}>
               <a
-                href="https://xteem.vercel.app/"
+                href="https://www.xteemwell.com/"
                 target="_blank"
                 rel="noreferrer"
               >
