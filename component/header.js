@@ -21,7 +21,13 @@ function Header({ className }) {
         <div className={headerStyles.contact}>
           <ul>
             <li>
-              <a href="#">My Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1lVgCpRH3rP29Dkd35Y88LLW6Io8mKFdP/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                My Resume
+              </a>
             </li>
             <li>
               <a href="#">Works</a>
