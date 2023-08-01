@@ -33,7 +33,13 @@ function Header({ className }) {
               <a href="#">Works</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a
+                href="https://medium.com/@Aiseluck"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </div>
